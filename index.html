@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>Responsive food delievery Website</title>
+</head>
+<body>
+    <!-- sidebar -->
+     <div class="sidebar">
+        <!-- logo-->
+         <h1 class = "logo">FoodHub</h1>
+         <!--list of menus-->
+         <div class="side-menus">
+            <a href="#"><ion-icon name="storefront-outline"></ion-icon>Home</a>
+            <a href="#"><ion-icon name="receipt-outline"></ion-icon>Bill</a>
+            <a href="#"><ion-icon name="wallet-outline"></ion-icon>Wallet</a>
+            <a href="#"><ion-icon name="notifications-outline"></ion-icon>Notification</a>
+            <a href="#"><ion-icon name="chatbubbles-outline"></ion-icon>Contact us</a>
+            <a href="#"><ion-icon name="settings-outline"></ion-icon>Settings</a>
+         </div>
+         <div class="logout">
+            <a href="#"><ion-icon name="log-out-outline"></ion-icon>Logout</a>
+         </div>
+     </div>
+
+     <!--main-->
+
+     <div class="main">
+        <!--main nav-bar-->
+        <div class="main-navbar">
+            <ion-icon class = "toggle-menu" name="menu-outline"></ion-icon>
+            <div class="search">
+                <input type="text" placeholder="search-food">
+                <button class = "search-button">Search</button>
+            </div>
+            <div class="details">
+                <a class="cart" href="#"><ion-icon name="cart-outline"></ion-icon></a>
+                <a class="user" href="#"><ion-icon name="person-outline"></ion-icon></a>
+            </div>
+         </div>
+
+         <div class="main-highlight">
+            <div class="recommendation">
+                <h2 class="main-title">Recommendations</h2>
+                <div class="main-arrow">
+                    <ion-icon name="chevron-back-outline" class="arrow back" ></ion-icon>
+                    <ion-icon name="chevron-forward-outline" class="arrow next"></ion-icon>
+                </div>
+            </div>
+            <div class="items">
+                <div class="item1-card card">
+                    <img src="./image/burger.jpeg" alt="burger"  class="image">
+                    <div class="item-desc">
+                        <h4>Burger</h4>
+                        <p>&#8377;200</p>
+                    </div>
+                </div>
+                <div class="item1-card card">
+                    <img src="./image/butter-chicken.jpg" alt="butter-chicken" class="image">
+                    <div class="item-desc">
+                        <h4>Butter Chicken</h4>
+                        <p>&#8377;300</p>
+                    </div>
+                </div>
+                <div class="item1-card card">
+                    <img src="./image/Chicken-Biryani.jpg" alt="Chicken-Biryani" class="image">
+                    <div class="item-desc">
+                        <h4>Chicken-Biryani</h4>
+                        <p>&#8377;400</p>
+                    </div>
+                </div>
+                <div class="item1-card card">
+                    <img src="./image/dosa.jpeg" alt="Dosa" class="image">
+                    <div class="item-desc">
+                        <h4>Dosa</h4>
+                        <p>&#8377;100</p>
+                    </div>
+                </div>
+            </div>
+         </div>
+
+        <!--main course-->
+         <div class="main-menus">
+            <div class="main-filter">
+                <div class="menu-message">
+                    <h2 class="main-title">Menu <br> Category</h2>
+                    <div class="main-arrow">
+                        <ion-icon name="chevron-back-outline" class="arrow back1"></ion-icon>
+                        <ion-icon name="chevron-forward-outline" class="arrow next1"></ion-icon>
+                    </div>
+                </div>
+                <div class="filter-wrapper">
+                    <div class="all-menu filter-card">
+                        <div class="filter-icon">
+                            <ion-icon name="restaurant-outline"></ion-icon>
+                        </div>
+                        <p>All menus</p>
+                    </div>
+                    <div class="burger filter-card">
+                        <div class="filter-icon">
+                            <ion-icon name="fast-food-outline"></ion-icon>
+                        </div>
+                        <p>Burger</p>
+                    </div>
+                    <div class="pizza filter-card">
+                        <div class="filter-icon">
+                            <ion-icon name="pizza-outline"></ion-icon>
+                        </div>
+                        <p>Pizza</p>
+                    </div>
+                    <div class="wine filter-card">
+                        <div class="filter-icon">
+                            <ion-icon name="wine-outline"></ion-icon>
+                        </div>
+                        <p>Wine</p>
+                    </div>
+                    <div class="ice-cream filter-card">
+                        <div class="filter-icon">
+                            <ion-icon name="ice-cream-outline"></ion-icon>
+                        </div>
+                        <p>Ice-cream</p>
+                    </div>
+                    <div class="coffee filter-card">
+                        <div class="filter-icon">
+                            <ion-icon name="cafe-outline"></ion-icon>
+                        </div>
+                        <p>Coffee</p>
+                    </div>
+                    <div class="seafood filter-card">
+                        <div class="filter-icon">
+                            <ion-icon name="fish-outline"></ion-icon>
+                        </div>
+                        <p>Seafood</p>
+                    </div>
+                    <div class="healthy filter-card">
+                        <div class="filter-icon">
+                            <ion-icon name="nutrition-outline"></ion-icon>
+                        </div>
+                        <p>Healthy</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="divider">
+            <!-- main food items-->
+
+            <div class="main-details">
+                <h2 class="main-title">
+                    Choose Order
+                </h2>
+                <div class="detail-wrapper">
+                    <div class="detail-card">
+                        <img src="./image/pizza.jpg" alt="" class="detail-img">
+                        <div class="detail-desc">
+                            <div class="detail-name">
+                                <h3>Farm-house Pizza</h3>
+                                <p class="detail-sub">Farm-fresh veggies, rich mozzarella, 
+                                    and a flavorful sauce on a perfectly baked crust - pure farmhouse goodness!</p>
+                                <p class="price">&#8377;389</p>
+                            </div>
+                            <div>
+                                <ion-icon class ="detail-fav" name = "bookmark-outline"></ion-icon>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-card">
+                        <img src="./image/fish-curry.jpg" alt="" class="detail-img">
+                        <div class="detail-desc">
+                            <div class="detail-name">
+                                <h3>Andhra Style Fish Curry</h3>
+                                <p class="detail-sub">Spicy, tangy, and packed with coastal flavors -
+                                     authentic Andhra Fish Curry at its best!</p>
+                                <p class="price">&#8377;199</p>
+                            </div>
+                            <div>
+                                <ion-icon class ="detail-fav" name = "bookmark-outline"></ion-icon>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-card">
+                        <img src="./image/hyd-chicken-bir.jpg" alt="" class="detail-img">
+                        <div class="detail-desc">
+                            <div class="detail-name">
+                                <h3>Hyderabadi Chicken Biryani</h3>
+                                <p class="detail-sub">Aromatic basmati rice, succulent chicken, and rich spices -
+                                     the essence of Hyderabadi Biryani!</p>
+                                <p class="price">&#8377;349</p>
+                            </div>
+                            <div>
+                                <ion-icon class ="detail-fav" name = "bookmark-outline"></ion-icon>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-card">
+                        <img src="./image/Tandoori_chicken.jpg" alt="" class="detail-img">
+                        <div class="detail-desc">
+                            <div class="detail-name">
+                                <h3>Exclusive Tandoori Chicken</h3>
+                                <p class="detail-sub">Juicy, smoky, and infused with bold spices -
+                                     our Tandoori Chicken is grilled to perfection!</p>
+                                <p class="price">&#8377;499</p>
+                            </div>
+                            <div>
+                                <ion-icon class ="detail-fav" name = "bookmark-outline"></ion-icon>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-card">
+                        <img src="./image/butter-chicken.jpg" alt="" class="detail-img">
+                        <div class="detail-desc">
+                            <div class="detail-name">
+                                <h3>Butter Chicken</h3>
+                                <p class="detail-sub">Aromatic basmati rice, succulent chicken, and rich spices -
+                                     the essence of Hyderabadi Biryani!</p>
+                                <p class="price">&#8377;400</p>
+                            </div>
+                            <div>
+                                <ion-icon class ="detail-fav" name = "bookmark-outline"></ion-icon>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-card">
+                        <img src="./image/butter-naan.jpg" alt="" class="detail-img">
+                        <div class="detail-desc">
+                            <div class="detail-name">
+                                <h3>Butter Naan</h3>
+                                <p class="detail-sub">Aromatic basmati rice, succulent chicken, and rich spices -
+                                     the essence of Hyderabadi Biryani!</p>
+                                <p class="price">&#8377;400</p>
+                            </div>
+                            <div>
+                                <ion-icon class ="detail-fav" name = "bookmark-outline"></ion-icon>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-card">
+                        <img src="./image/butter-naan.jpg" alt="" class="detail-img">
+                        <div class="detail-desc">
+                            <div class="detail-name">
+                                <h3>Butter Naan</h3>
+                                <p class="detail-sub">Aromatic basmati rice, succulent chicken, and rich spices -
+                                     the essence of Hyderabadi Biryani!</p>
+                                <p class="price">&#8377;400</p>
+                            </div>
+                            <div>
+                                <ion-icon class ="detail-fav" name = "bookmark-outline"></ion-icon>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-card">
+                        <img src="./image/butter-naan.jpg" alt="" class="detail-img">
+                        <div class="detail-desc">
+                            <div class="detail-name">
+                                <h3>Butter Naan</h3>
+                                <p class="detail-sub">Aromatic basmati rice, succulent chicken, and rich spices -
+                                     the essence of Hyderabadi Biryani!</p>
+                                <p class="price">&#8377;400</p>
+                            </div>
+                            <div>
+                                <ion-icon class ="detail-fav" name = "bookmark-outline"></ion-icon>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="app.js"></script>
+</html>
